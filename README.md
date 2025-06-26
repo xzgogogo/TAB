@@ -85,7 +85,7 @@ Ensure the files are placed in the correct directories for proper functionality.
 We provide the experiment scripts for all benchmarks under the folder `./scripts/multivariate_detection`, and `./scripts/univariate_detection`. For example, you can reproduce an experiment result as the following:
 
 ```shell
-sh ./scripts/multivariate_detection/detect_label/MSL_script/ModernTCN.sh
+sh ./scripts/CATCH.sh
 ```
 
 
