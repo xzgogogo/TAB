@@ -1,0 +1,2 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --model-name "LLM.UniTimeModel" --model-hyper-params '{"dataset": "UV", "horizon": 1, "max_backcast_len": 96, "max_token_num": 17, "norm": true, "num_epochs": 3, "patch_size": 16, "sampling_rate": 0.05, "seq_len": 96, "stride": 16}' --adapter "llm_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/UniTimeModelfew"
+

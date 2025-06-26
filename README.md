@@ -69,7 +69,7 @@ pip install -r requirements.txt
 
 2. Data preparation
 
-Prepare Data. You can obtain the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/14GyngNx4_ULdj7a1ZKBFWVhhJbbz_F8r/view?usp=drive_link). Then place the downloaded data under the folder `./dataset`.  
+Prepare Data. You can obtain the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/1V5BAHWBKU8uih3hE1R7WdF6_crZlIbQT/view?usp=drive_link). Then place the downloaded data under the folder `./dataset`.  
 
 3. Checkpoints preparation
 
