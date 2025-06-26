@@ -1,6 +1,6 @@
 # TAB: Unified Benchmarking of Time Series Anomaly Detection Methods
 
-[![PVLDB](https://img.shields.io/badge/PVLDB'25-TFB-orange)](https://arxiv.org/pdf/2403.20150.pdf)  [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)  [![PyTorch](https://img.shields.io/badge/PyTorch-2.4.1-blue)](https://pytorch.org/)  ![Stars](https://img.shields.io/github/stars/decisionintelligence/TAB)  
+[![PVLDB](https://img.shields.io/badge/PVLDB'25-TAB-orange)](https://arxiv.org/pdf/2403.20150.pdf)  [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)  [![PyTorch](https://img.shields.io/badge/PyTorch-2.4.1-blue)](https://pytorch.org/)  ![Stars](https://img.shields.io/github/stars/decisionintelligence/TAB)  
 
 
 > [!IMPORTANT]
