@@ -88,6 +88,14 @@ sh ./scripts/multivariate_detection/detect_label/MSL_script/ModernTCN.sh
 
 
 
+## FAQ
+
+1. Is there code in TFB's code base to compute the characteristics of the dataset?
+
+TFB has open-sourced the [code](https://github.com/decisionintelligence/TFB/blob/master/characteristics_extractor/Characteristics_Extractor.py) for computing time series characteristics, such as trend, seasonality, stationarity, shifting, transition, correlation, and more. Both [Chinese](https://github.com/decisionintelligence/TFB/blob/master/characteristics_extractor/Readme_chn.md) and [English](https://github.com/decisionintelligence/TFB/blob/master/characteristics_extractor/Readme_en.md) documentation are provided.
+
+
+
 ## Citation
 
 If you find this repo useful, please cite our paper.
@@ -101,7 +109,7 @@ year       = {2025}
 }
 
 
-@inproceedings{wu2024catch,
+@inproceedings{wu2025catch,
 title     = {{CATCH}: Channel-Aware multivariate Time Series Anomaly Detection via Frequency Patching},
 author    = {Wu, Xingjian and Qiu, Xiangfei and Li, Zhengyu and Wang, Yihang and Hu, Jilin and Guo, Chenjuan and Xiong, Hui and Yang, Bin},
 booktitle = {ICLR},
