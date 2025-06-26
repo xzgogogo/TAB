@@ -8,7 +8,9 @@
 
 
 
-🚩 **News** (2025.05) **TAB has been accepted by PVLDB 2025**.
+🚩 **News** (2025.05) **[TAB](https://arxiv.org/pdf/2506.18046) has been accepted by PVLDB 2025**.
+
+
 
 
 
