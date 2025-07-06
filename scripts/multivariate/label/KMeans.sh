@@ -1,1 +1,1 @@
-python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --model-name "self_impl.KMeans" --model-hyper-params '{"window_size": 100, "anomaly_ratio": 3.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/KMeans"
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --model-name "self_impl.KMeans" --model-hyper-params '{"window_size": 100}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/KMeans"

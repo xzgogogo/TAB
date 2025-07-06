@@ -1,1 +1,1 @@
-python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --model-name "self_impl.ContraAD" --model-hyper-params '{"n_window": 100, "anomaly_ratio": 20.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/ContraAD"
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --model-name "self_impl.ContraAD" --model-hyper-params '{"n_window": 100}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/ContraAD"

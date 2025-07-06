@@ -1,1 +1,1 @@
-python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --model-name "self_impl.Torsk" --model-hyper-params '{"anomaly_ratio": 0.1}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/Torsk"
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --model-name "self_impl.Torsk" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/Torsk"

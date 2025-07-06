@@ -1,1 +1,1 @@
-python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --model-name "self_impl.LeftSTAMPi" --model-hyper-params '{"anomaly_ratio": 10.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/LeftSTAMPi"
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --model-name "self_impl.LeftSTAMPi" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/LeftSTAMPi"
