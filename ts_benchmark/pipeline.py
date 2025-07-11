@@ -7,8 +7,6 @@ from typing import List, Dict, Type, Optional
 import pandas as pd
 
 from ts_benchmark.data.data_source import (
-    LocalForecastingDataSource,
-    LocalStForecastingDataSource,
     DataSource,
     LocalAnomalyDetectDataSource,
 )
@@ -28,44 +26,17 @@ class DatasetInfo:
 
 
 PREDEFINED_DATASETS = {
-    "large_forecast": DatasetInfo(
-        size_value=["large", "small"],
-        datasrc_class=LocalForecastingDataSource,
-    ),
-    "small_forecast": DatasetInfo(
-        size_value=["small"], datasrc_class=LocalForecastingDataSource
-    ),
-    "user_forecast": DatasetInfo(
-        size_value=["user"], datasrc_class=LocalForecastingDataSource
-    ),
-    "large_st_forecast": DatasetInfo(
-        size_value=["large", "small"],
-        datasrc_class=LocalStForecastingDataSource,
-    ),
-    "small_st_forecast": DatasetInfo(
-        size_value=["small"], datasrc_class=LocalStForecastingDataSource
-    ),
-    "user_st_forecast": DatasetInfo(
-        size_value=["user"], datasrc_class=LocalStForecastingDataSource
-    ),
+
     "large_detect": DatasetInfo(
-        size_value=["large", "small"],
+        size_value=["large"],
         datasrc_class=LocalAnomalyDetectDataSource,
     ),
-    "small_detect": DatasetInfo(
-        size_value=["small"], datasrc_class=LocalAnomalyDetectDataSource
-    ),
-    "user_detect": DatasetInfo(
-        size_value=["user"], datasrc_class=LocalAnomalyDetectDataSource
-    ),
-    "mult_detect": DatasetInfo(
-    size_value=["mult_old", "mult_new", "mult_new_new"], datasrc_class=LocalAnomalyDetectDataSource
-    )
+
 }
 
 
 def filter_data(
-    metadata: pd.DataFrame, size_value: List[str], feature_dict: Optional[Dict] = None
+        metadata: pd.DataFrame, size_value: List[str], feature_dict: Optional[Dict] = None
 ) -> List[str]:
     """
     Filters the dataset based on given filters
@@ -110,10 +81,10 @@ def _get_model_names(model_names: List[str]):
 
 
 def pipeline(
-    data_config: dict,
-    model_config: dict,
-    evaluation_config: dict,
-    save_path: str,
+        data_config: dict,
+        model_config: dict,
+        evaluation_config: dict,
+        save_path: str,
 ) -> List[str]:
     """
     Execute the benchmark pipeline process
@@ -138,8 +109,8 @@ def pipeline(
 
     data_src_type = PREDEFINED_DATASETS[dataset_name_list[0]].datasrc_class
     if not all(
-        PREDEFINED_DATASETS[dataset_name].datasrc_class is data_src_type
-        for dataset_name in dataset_name_list
+            PREDEFINED_DATASETS[dataset_name].datasrc_class is data_src_type
+            for dataset_name in dataset_name_list
     ):
         raise ValueError("Not supporting different types of data sources.")
 
@@ -178,7 +149,7 @@ def pipeline(
 
     log_file_names = []
     for model_factory, result_itr, model_save_name in zip(
-        model_factory_list, result_list, model_save_names
+            model_factory_list, result_list, model_save_names
     ):
         for i, result_df in enumerate(result_itr.collect()):
             log_file_names.append(
