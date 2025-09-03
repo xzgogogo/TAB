@@ -75,10 +75,10 @@ Prepare Data. You can obtain the well pre-processed datasets from [Google Drive]
 
 You can download the checkpoints from [Google Drive](https://drive.google.com/file/d/14VKcv_sIPDJgSgzOxUIN80kAzqXdzhC0/view?usp=sharing). After obtaining the files, follow the steps below to organize them:
 1. For LLM-based models, move the files from `checkpoints/llm_checkpoints` to the folder `ts_benchmark/baselines/LLM/checkpoints`.
-2. For pre-train models (UniTS, Timer and TimesFM), move the files from `checkpoints/pre_train_checkpoints` to the folder `ts_benchmark/baselines/pre_train/checkpoints`. And the other models' checkpoints can be obtained from Huggingface by the code.
+2. For pre-train models (UniTS, Timer and TimesFM), move the files from `checkpoints/pre_train_checkpoints` to the folder `ts_benchmark/baselines/pre_train/checkpoints`.
+3. And the other models' checkpoints can be obtained from Huggingface by the code.
 
-
-Ensure the files are placed in the correct directories for proper functionality.
+Make sure all files are placed in the correct directories to ensure proper functionality.
 
 4. Train and evaluate model
 
