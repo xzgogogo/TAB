@@ -8,6 +8,7 @@
 
 
 🚩 **News** (2025.10) We have open-sourced the [time series anomaly detection leaderboard](https://decisionintelligence.github.io/OpenTS/leaderboards/#multivariate_detection).
+
 🚩 **News** (2025.05) **[TAB](https://arxiv.org/pdf/2506.18046) has been accepted by PVLDB 2025**.
 
 
