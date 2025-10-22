@@ -16,6 +16,7 @@ __all__ = [
     "EIF",
     "ContraAD",
     "CATCH",
+    "CrossAD",
 ]
 
 from ts_benchmark.baselines.self_impl.LOF.lof import LOF
@@ -36,3 +37,4 @@ from ts_benchmark.baselines.self_impl.eif.eif import EIF
 from ts_benchmark.baselines.self_impl.ContraAD.ContraAD import ContraAD
 from ts_benchmark.baselines.self_impl.Series2Graph.Series2Graph import Series2Graph
 from ts_benchmark.baselines.self_impl.CATCH.CATCH import CATCH
+from ts_benchmark.baselines.self_impl.CrossAD.CrossAD import CrossAD
